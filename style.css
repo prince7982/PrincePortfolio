@@ -231,6 +231,10 @@ section{
     color: #f75023;
     font-size: 14px;
 }
+.tab-contents ul li a{
+    text-decoration: none;
+    color: #ababab;
+}
 .tab-contents{
     display: none;
 }
