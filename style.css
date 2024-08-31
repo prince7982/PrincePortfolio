@@ -173,7 +173,7 @@ section{
     color: #ababab;
 }
 .container{
-    padding: 10px 10%;
+    padding: 10px 11.5%;
 }
 .row{
     display: flex;
@@ -201,7 +201,7 @@ section{
 }
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px -15px 10px;
 }
 .tab-links{
     margin-right: 50px;
