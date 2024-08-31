@@ -103,15 +103,16 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work">
-                    <img src="photos/image1.jpeg" alt="">
+                <!-- ---group 1--- -->
+                <div class="work work-group-1">
+                    <img src="photos/musicplayer.gif" alt="">
                     <div class="layer">
-                        <h3>Image Gallery</h3>
-                        <p>In this image gallery variety of images are there according to their category.</p>
+                        <h3>Music Player</h3>
+                        <p>In this Music Player Many songs are added and proper controls of this are also include inthis.</p>
                         <a href="#"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
-                <div class="work">
+                <div class="work work-group-1">
                     <img src="photos/quiz.jpeg" alt="">
                     <div class="layer">
                         <h3>Quiz Website</h3>
@@ -120,16 +121,45 @@
                         <a href="#"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="photos/todolist1.jpeg" alt="">
+                <div class="work work-group-1">
+                    <img src="photos/portfolio.gif" alt="">
                     <div class="layer">
-                        <h3>To-do-list</h3>
-                        <p>In this to-do-list we can add our task and remove the task after completion of this.</p>
+                        <h3>Bootstrap Based Portfolio</h3>
+                        <p>I made another portfolio that is build using Bootstrap in this multiple portfolio are there.</p>
                         <a href="#"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
+
+                <!-- ----group 2 (initially hidden) ---- -->
+                 <div class="work work-group-2" style="display: none;">
+                    <img src="photos/todolist.gif" alt="">
+                    <div class="layer">
+                        <h3>To-do-list</h3>
+                        <p>In this to-do-list we can add our task and remove the task after completion of this.</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                    </div>
+                 </div>
+                 <div class="work work-group-2" style="display: none;">
+                    <img src="photos/image1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Image Gallery</h3>
+                        <p>In this image gallery i add variety of images and also include category wise images.</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                    </div>
+                 </div>
+                 <div class="work work-group-2" style="display: none;">
+                    <img src="photos/login.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Login Form</h3>
+                        <p>In this login form user enter their credentials to login in website.</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                    </div>
+                 </div>
+
+                 <!-- -- Add more groups as needed, following the same pattern-- -->
+
             </div>
-            <a href="#" class="btn-portfolio">See More</a>
+            <a href="#portfolio" class="btn-portfolio" id="see-more-btn">See More</a>
         </div>
     </div>
 
@@ -196,68 +226,9 @@
         </div>
      </div>
 
-     <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+    <script src="script.js"></script>
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-
-
-        let menu = document.querySelector('#menu-icon');
-        let navlist = document.querySelector('.navlist');
-
-        menu.onclick = () => {
-            menu.classList.toggle('bx-x');
-            navlist.classList.toggle('active');
-        };
-        window.onscroll = () => {
-            menu.classList.remove('bx-x');
-            navlist.classList.remove('active');
-        };
-
-        // const sr = ScrollReveal ({
-        //     distance:'45px',
-        //     duration:2700,
-        //     reset:true
-        // })
-
-        // sr.reveal('.home-text',{delay:350,origin:'left'})
-        // sr.reveal('.home-img',{delay:350,origin:'right'})
-
-        // sr.reveal('#about,#portfolio,#services,contact',{delay:200,origin:'bottom'});
-    </script>
-
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxAyovYyiPWax0mb_4BFV-UVyALt2WUPMeVvGFClvPWFtwqPD62UDpR5VzaU-40BaVf/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 </body>
 
 </html>
