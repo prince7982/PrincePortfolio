@@ -201,7 +201,7 @@ section{
 }
 .tab-titles{
     display: flex;
-    margin: 20px -20px 10px;
+    margin: 20px -15px 10px;
 }
 .tab-links{
     margin-right: 50px;
