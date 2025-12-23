@@ -189,7 +189,7 @@ section{
 .about-col-1 img{
     width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 .about-col-2{
     flex-basis: 60%;
